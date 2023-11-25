@@ -1,0 +1,6 @@
+# config/schedule.yml
+---
+:schedule:
+  delete_posts_worker:
+    cron: '0 0 * * *'  # Run every day at midnight
+    class: 'DeletePostsWorker'
