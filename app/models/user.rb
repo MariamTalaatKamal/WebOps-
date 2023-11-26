@@ -7,6 +7,7 @@
 # app/models/user.rb
 class User < ApplicationRecord
   has_many :posts
+  has_many :comments
   
   devise :database_authenticatable,
          :jwt_authenticatable,
